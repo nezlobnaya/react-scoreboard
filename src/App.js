@@ -59,9 +59,14 @@ function App () {
     ])
    
   
-  const handleRemovePlayer = (id) => setPlayers.filter(player => player.id !== id )
+  const handleRemovePlayer = (id) => {
+    setPlayers(
+         
+        players.filter (p => p.id !== id)
+      )
+  }
 
-
+  
 
   return (
     <div className="scoreboard">
